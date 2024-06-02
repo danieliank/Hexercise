@@ -9,7 +9,13 @@ import SwiftUI
 
 struct GameOverView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+            Image(systemName: "arrow.counterclockwise")
+        }
+        .buttonStyle(PlainButtonStyle())
+        .onTapGesture {
+            WKInterfaceDevice.current().play(.notification)
+        }
     }
 }
 

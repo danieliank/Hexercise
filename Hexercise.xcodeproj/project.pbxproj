@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A7AE1DE2C0C415800DC309F /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AE1DD2C0C415800DC309F /* GameOverView.swift */; };
 		6AAE28B02C09C1E400BF7AC9 /* Hexercise Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6AAE28AF2C09C1E400BF7AC9 /* Hexercise Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6AAE28B52C09C1E400BF7AC9 /* HexerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE28B42C09C1E400BF7AC9 /* HexerciseApp.swift */; };
 		6AAE28B72C09C1E400BF7AC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE28B62C09C1E400BF7AC9 /* ContentView.swift */; };
 		6AAE28B92C09C1E500BF7AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE28B82C09C1E500BF7AC9 /* Assets.xcassets */; };
 		6AAE28BC2C09C1E500BF7AC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE28BB2C09C1E500BF7AC9 /* Preview Assets.xcassets */; };
+		6AAE28C82C09C5C700BF7AC9 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE28C72C09C5C700BF7AC9 /* HeartRateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +41,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A49FC532C09CBA70050FBE8 /* Hexercise-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hexercise-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6A7AE1DD2C0C415800DC309F /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		6AAE28A92C09C1E400BF7AC9 /* Hexercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hexercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAE28AF2C09C1E400BF7AC9 /* Hexercise Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hexercise Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAE28B42C09C1E400BF7AC9 /* HexerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexerciseApp.swift; sourceTree = "<group>"; };
 		6AAE28B62C09C1E400BF7AC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AAE28B82C09C1E500BF7AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AAE28BB2C09C1E500BF7AC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6AAE28C62C09C33E00BF7AC9 /* Hexercise Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hexercise Watch App.entitlements"; sourceTree = "<group>"; };
+		6AAE28C72C09C5C700BF7AC9 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,11 @@
 		6AAE28B32C09C1E400BF7AC9 /* Hexercise Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				6A49FC532C09CBA70050FBE8 /* Hexercise-Watch-App-Info.plist */,
+				6AAE28C62C09C33E00BF7AC9 /* Hexercise Watch App.entitlements */,
 				6AAE28B42C09C1E400BF7AC9 /* HexerciseApp.swift */,
+				6AAE28C72C09C5C700BF7AC9 /* HeartRateManager.swift */,
+				6A7AE1DD2C0C415800DC309F /* GameOverView.swift */,
 				6AAE28B62C09C1E400BF7AC9 /* ContentView.swift */,
 				6AAE28B82C09C1E500BF7AC9 /* Assets.xcassets */,
 				6AAE28BA2C09C1E500BF7AC9 /* Preview Content */,
@@ -193,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AAE28B72C09C1E400BF7AC9 /* ContentView.swift in Sources */,
+				6AAE28C82C09C5C700BF7AC9 /* HeartRateManager.swift in Sources */,
+				6A7AE1DE2C0C415800DC309F /* GameOverView.swift in Sources */,
 				6AAE28B52C09C1E400BF7AC9 /* HexerciseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,13 +339,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hexercise Watch App/Hexercise Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hexercise Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 84CY6V3X8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hexercise-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Hexercise;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We want to use your health records.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We want to share your health records.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,13 +374,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hexercise Watch App/Hexercise Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hexercise Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 84CY6V3X8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hexercise-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Hexercise;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We want to use your health records.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We want to share your health records.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
